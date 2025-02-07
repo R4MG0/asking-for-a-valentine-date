@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Let him cook</title>
+</head>
+<body>
+    <div class="bigContainer">
+        <h1 id="title">Do you want to be my Valentine?</h1> 
+        <div class="buttonContainer">
+            <button id="yes" onclick="happynoises('green')">YES</button>
+            <button id="no" onclick="nahuh()">NO</button>
+        </div>
+    </div>
+    <script>
+        function happynoises(newColor) {
+            const elem = document.getElementById("title");
+            elem.style.color = newColor;
+            elem.innerText = "WOW YOU MADE ME HAPPY. IMMA PICK YOU UP ON 14.02.2025 08:00pm"
+            const buttonBad = document.getElementById("no")
+            const buttonGood = document.getElementById("yes")
+            buttonBad.remove()
+            buttonGood.remove()
+        }
+        function nahuh(){
+        const button = document.getElementById("no");
+        const parent = button.parentElement;
+        const parentWidth = parent.clientWidth;
+        const parentHeight = parent.clientHeight;
+        const buttonWidth = button.clientWidth;
+        const buttonHeight = button.clientHeight;
+
+        // Generate random position within bounds
+        const randomX = Math.floor(Math.random() * 1000);
+        const randomY = Math.floor(Math.random() * 1000);
+        console.log("randomX: ", randomX);
+        console.log("randomY: ", randomY);
+
+        
+
+        button.style.position = "absolute";
+        button.style.left = `${randomX}px`;
+        button.style.top = `${randomY}px`;            const elem = document.getElementById("no");
+            elem.style.transformStyle = Math.random()
+        }
+    </script>
+</body>
+</html>
