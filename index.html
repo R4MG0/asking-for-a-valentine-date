@@ -10,15 +10,15 @@
     <div class="bigContainer">
         <h1 id="title">Do you want to be my Valentine?</h1> 
         <div class="buttonContainer">
-            <button id="yes" onclick="happynoises('green')">YES</button>
-            <button id="no" onclick="nahuh()">NO</button>
+            <button id="yes" class="yes" onclick="happynoises('green')">YES</button>
+            <button id="no" class="no" onclick="nahuh()">NO</button>
         </div>
         <img id="cuteImage" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="cute gif">
     </div>
     <script>
         function happynoises(newColor) {
             const elem = document.getElementById("title");
-            elem.style.color = newColor;
+            // elem.style.color = newColor;
             elem.innerText = "WOW YOU MADE ME HAPPY. IMMA PICK YOU UP ON 14.02.2025 08:00pm"
             const buttonBad = document.getElementById("no")
             const buttonGood = document.getElementById("yes")

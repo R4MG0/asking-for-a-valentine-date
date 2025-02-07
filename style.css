@@ -1,5 +1,11 @@
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
 html, body, .bigContainer {
     height: 100%;
+    background-color:#FFD2DA; 
 }
 .bigContainer{
     display: flex;
@@ -12,4 +18,37 @@ html, body, .bigContainer {
 }
 .buttonContainer button {
     margin-right: 1em;
+}
+
+button {
+    height: 3.5em;
+    width: 6em;
+}
+
+img {
+    height: max-content;
+}
+
+h1 {
+    font-size: 72px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Dancing Script", cursive;
+    color: #D63384;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    animation: bounce 2s infinite;
+    /* color: #d32f2f; */
+}
+.no {
+    background-color: #ff4c4c;
+    color: white;
+    border-color: transparent;
+    border-radius: 10px;
+}
+.yes {
+    /* background-color: #80ff80; */
+    background-color: #00B380;
+    color: white;
+    border-color: transparent;
+    border-radius: 10px;
 }
