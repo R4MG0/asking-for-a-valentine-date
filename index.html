@@ -9,6 +9,7 @@
 <body>
     <div class="bigContainer">
         <h1 id="title">Do you want to be my Valentine?</h1> 
+        <p id="smallText"></p>
         <div class="buttonContainer">
             <button id="yes" class="yes" onclick="happynoises('green')">YES</button>
             <button id="no" class="no" onclick="nahuh()">NO</button>
@@ -18,8 +19,10 @@
     <script>
         function happynoises(newColor) {
             const elem = document.getElementById("title");
+            const subtitle = document.getElementById("smallText")
             // elem.style.color = newColor;
-            elem.innerText = "WOW YOU MADE ME HAPPY. IMMA PICK YOU UP ON 14.02.2025 08:00pm"
+            elem.innerText = "WOW! This makes me really, really happy. Please write me when and where I should come pick you up :)"
+            // subtitle.innerText = "Please write me a private text if the time is ok for ya"
             const buttonBad = document.getElementById("no")
             const buttonGood = document.getElementById("yes")
             buttonBad.remove()
