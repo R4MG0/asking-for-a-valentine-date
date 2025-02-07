@@ -13,6 +13,7 @@
             <button id="yes" onclick="happynoises('green')">YES</button>
             <button id="no" onclick="nahuh()">NO</button>
         </div>
+        <img id="cuteImage" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="cute gif">
     </div>
     <script>
         function happynoises(newColor) {
@@ -23,6 +24,8 @@
             const buttonGood = document.getElementById("yes")
             buttonBad.remove()
             buttonGood.remove()
+            const cuteImage = document.getElementById("cuteImage");
+            cuteImage.src = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdDFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif"
         }
         function nahuh(){
         const button = document.getElementById("no");
